@@ -1,0 +1,27 @@
+{
+  "name": "reactNativeFusionchartsSamples",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "build:assets": "fc-build-assets --fc-template ./assets/fusioncharts-tpl.html --fc-library ./assets/fusioncharts && rm -rf assets/fusioncharts"
+  },
+  "dependencies": {
+    "fusioncharts": "^3.13.1-sr.2",
+    "react": "16.5.0",
+    "react-native": "^0.64.2",
+    "react-native-fusioncharts": "^2.0.3",
+    "react-native-material-ripple": "^0.8.0",
+    "react-navigation": "^2.17.0"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.48.0",
+    "react-test-renderer": "16.5.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
